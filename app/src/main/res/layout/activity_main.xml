@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+    <!-- quando escolher LinearLayout lembrar sempre de definir o tipo de orientação,
+      (orientation) para saber como será formatado -->
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#67F6E6"
+                android:padding="16dp"
+                android:text="@string/hello_world"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#67F6E6"
+                android:padding="16dp"
+                android:text="@string/hello_world"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#67F6E6"
+                android:padding="16dp"
+                android:text="@string/hello_world"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#67F6E6"
+                android:padding="16dp"
+                android:text="@string/hello_world"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_margin="8dp"
+        android:background="#00BCD4">
+
+    </View>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#67F6E6"
+            android:fontFamily="@font/alex_brush"
+            android:padding="5dp"
+            android:text="@string/say_hello_world"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="70sp"
+            android:textStyle="italic" />
+
+    </HorizontalScrollView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#E5ECED"
+        android:hint="@string/nome"
+        android:inputType="text">
+
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B069D6"
+        android:gravity=""
+        android:text="@string/button">
+
+    </Button>
+
+    <ImageView
+        android:src="@drawable/ic_baseline_cast_24"
+        app:tint="@color/purple_200"
+        android:layout_width="128dp"
+        android:layout_height="128dp" >
+
+    </ImageView>
+
+
+</LinearLayout>
